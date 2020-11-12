@@ -72,7 +72,7 @@ not important:  blue             aaccff  777777
   --color-primary-text: var(--color-paper-white);
  
   --color-ok: var(--color-dark-green); 
-  --color-pending: var(--color-cardboard-gray);
+  --color-pending: var(--color-plasma-blue);
   --color-unknown: var(--color-beware-orange);
   --color-warning: var(--color-sunset-yellow);
   --color-problem: var(--color-danger-red); 
