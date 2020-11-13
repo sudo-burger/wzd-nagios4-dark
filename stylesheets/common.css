@@ -63,23 +63,36 @@ not important:  blue             aaccff  777777
 
   --color-main-background: var(--color-charcoal-gray);
   --color-background-dark: var(--color-main-background);
-  --color-background-darker: var(--color-shade-black);  
+  --color-background-darker: var(--color-shade-black);
   --color-main-text: var(--color-cardboard-gray);
-  --color-alt-text: var(--color-shade-black); 
+  --color-alt-text: var(--color-shade-black);
   --color-text-light: var(--color-main-text);
   --color-primary: var(--color-plasma-blue);
   --color-primary-light: var(--color-primary);
   --color-primary-text: var(--color-paper-white);
- 
-  --color-ok: var(--color-dark-green); 
+
+  --color-ok: var(--color-dark-green);
   --color-pending: var(--color-plasma-blue);
   --color-unknown: var(--color-beware-orange);
   --color-warning: var(--color-sunset-yellow);
-  --color-problem: var(--color-danger-red); 
+  --color-problem: var(--color-danger-red);
   --color-unimportant: var(--color-abyss-blue);
   --color-custom: var(--color-abyss-blue);
 
 }
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-main-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+
 
 body {
   margin: 0em;
