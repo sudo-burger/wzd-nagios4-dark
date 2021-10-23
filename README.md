@@ -1,6 +1,6 @@
-# Nagios4 Dark Theme
+# WZD Dark Theme for Nagios 4
 ## Description
-A simple dark theme for nagios core 4.x using stylesheets and an updated `index.php` with iframes
+Originally a remix of Russ Cook's nagios4-dark-theme (https://gitlab.com/bz0qyz/nagios4-dark-theme).
 
 ## Screenshot
 ![Screenshot](screenshot.png)
