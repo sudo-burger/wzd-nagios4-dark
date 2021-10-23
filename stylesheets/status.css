@@ -6,25 +6,22 @@
 /* copyright notice and this permission notice appear in all copies.       */                                                                                       
                                                                                                                                                                     
 .status { }                                                                                                                                                         
-                                                                                                                                                                    
 .itemTotalsTitle { font-size: 8pt; font-style: italic; clear:both;}                                                                                                 
-                                                                                                                                                                    
 table.status { font-size: 9pt; padding: 0 0 10 0; }
 table.statuss td, table.statuss td a {  color: var(--color-alt-text) }
-th.status    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777; color: #333333; }
+th.status    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); color: var(--color-main-text); }
 div.status   { font-size: 10pt; text-align: center; }
 .statusOdd   { font-size: 9pt; background-color: var(--color-medium-grey); line-height: 150%; padding: 0 4 0 4; }
 .statusEven  { font-size: 9pt; background-color: var(--charcoal-gray); line-height: 150%; padding: 0 4 0 4; }
 .statusOdd, .statusOdd a, .statusEven, .statusEven a { color: var(--color-main-text); }
-                                                                                                                                                                    
 
-.statusPENDING  { font-size: 9pt; background-color: var(--color-pending); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusOK       { font-size: 9pt; background-color: var(--color-ok); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusRECOVERY { font-size: 9pt; background-color: var(--color-ok); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusUNKNOWN  { font-size: 9pt; background-color: var(--color-unknown); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusWARNING  { font-size: 9pt; background-color: var(--color-warning); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusCRITICAL { font-size: 9pt; background-color: var(--color-problem); border: 1px solid #777777; padding: 0 5 0 5; }
-.statusCRITICALACK { font-size: 9pt; background-color: var(--color-problem); border: 1px solid #777777; padding: 0 5 0 5; }                                                                                                      
+.statusPENDING  { font-size: 9pt; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusOK       { font-size: 9pt; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusRECOVERY { font-size: 9pt; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusUNKNOWN  { font-size: 9pt; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusWARNING  { font-size: 9pt; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusCRITICAL { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusCRITICALACK { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
 
 .statusHOSTPENDING          { font-size: 9pt; background-color: var(--color-pending); line-height: 150%; padding: 0 4 0 4; }
 .statusHOSTUP               { font-size: 9pt; background-color: var(--color-ok); line-height: 150%; padding: 0 4 0 4; }
@@ -84,7 +81,7 @@ td.hostTotals          { font-size: 9pt; text-align: center; background-color: v
 /* page number styles, added 2/01/2012 -MG */
 #top_page_numbers { float:right;}
 #result_limit { display:inline;}
-.pagenumber { display: block; float:left; border: 1px solid var(--color-alternate-gray); padding: 0 2px 0 2px; margin: 1px;text-align:center; height:15px; }
+.pagenumber { display: block; float:left; border: 1px solid var(--color-border); padding: 0 2px 0 2px; margin: 1px;text-align:center; height:15px; }
 a.pagenumber:hover { background-color: #EFEFEF;text-decoration:none;}
 .current_page { color: #AAA; }         
 #inner_numbers { clear:right;}

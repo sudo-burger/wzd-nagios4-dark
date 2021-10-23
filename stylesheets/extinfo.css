@@ -33,7 +33,7 @@ DIV.commentNav { font-size: 10pt; text-align: center; }
 A.commentNav   { font-size: 10pt; }
 
 TABLE.comment { font-size: 10pt; background-color: var(--color-background-darker); color: var(--color-paper-white); padding: 2; }
-TH.comment    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777; }
+TH.comment    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); }
 .commentOdd   { font-size: 9pt; background-color: var(--color-medium-grey); }
 .commentEven  { font-size: 9pt; background-color: var(--color-charcoal-gray); }
 DIV.comment,A.comment { font-size: 10pt; text-align: center; }
@@ -43,42 +43,42 @@ DIV.downtimeNav { font-size: 10pt; text-align: center; }
 A.downtimeNav   { font-size: 10pt; }
 
 TABLE.downtime { font-size: 10pt; background-color: var(--color-background-darker); padding: 2; }
-TH.downtime    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777; }
+TH.downtime    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); }
 .downtimeOdd   { font-size: 9pt; background-color: var(--color-medium-grey); }
 .downtimeEven  { font-size: 9pt; background-color: var(--color-charcoal-gray); }
 
-.notflapping           { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; float: left; }
-.flapping              { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; float: left; }
-.notificationsENABLED  { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.notificationsDISABLED { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; }
-.checksENABLED         { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.checksDISABLED        { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; }
-.eventhandlersENABLED  { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.eventhandlersDISABLED { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; }
-.flapdetectionENABLED  { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.flapdetectionDISABLED { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; }
-.downtimeACTIVE        { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; float: left; }
-.downtimeINACTIVE      { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; float: left; }
-.processOK             { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.processUNKNOWN        { background-color: var(--color-unknown); border: 1px solid #777777; font-weight: bold; }
-.processWARNING        { background-color: var(--color-warning); border: 1px solid #777777; font-weight: bold; }
-.processCRITICAL       { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; }
-.modeACTIVE            { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; }
-.modeSTANDBY           { background-color: var(--color-warning); border: 1px solid #777777; font-weight: bold; }
+.notflapping           { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.flapping              { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.notificationsENABLED  { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.notificationsDISABLED { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; }
+.checksENABLED         { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.checksDISABLED        { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; }
+.eventhandlersENABLED  { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.eventhandlersDISABLED { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; }
+.flapdetectionENABLED  { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.flapdetectionDISABLED { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; }
+.downtimeACTIVE        { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.downtimeINACTIVE      { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.processOK             { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.processUNKNOWN        { background-color: var(--color-unknown); border: 1px solid var(--color-border); font-weight: bold; }
+.processWARNING        { background-color: var(--color-warning); border: 1px solid var(--color-border); font-weight: bold; }
+.processCRITICAL       { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; }
+.modeACTIVE            { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; }
+.modeSTANDBY           { background-color: var(--color-warning); border: 1px solid var(--color-border); font-weight: bold; }
 
-.hostUP           { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; float: left; }
-.hostDOWN         { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; float: left; }
-.hostUNREACHABLE  { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; float: left; }
+.hostUP           { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.hostDOWN         { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.hostUNREACHABLE  { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; float: left; }
 
-.serviceOK        { background-color: var(--color-ok); border: 1px solid #777777; font-weight: bold; float: left; }
-.serviceWARNING   { background-color: var(--color-warning); border: 1px solid #777777; font-weight: bold; float: left; }
-.serviceUNKNOWN   { background-color: var(--color-unknown); border: 1px solid #777777; font-weight: bold; float: left; }
-.serviceCRITICAL  { background-color: var(--color-problem); border: 1px solid #777777; font-weight: bold; float: left; }
+.serviceOK        { background-color: var(--color-ok); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.serviceWARNING   { background-color: var(--color-warning); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.serviceUNKNOWN   { background-color: var(--color-unknown); border: 1px solid var(--color-border); font-weight: bold; float: left; }
+.serviceCRITICAL  { background-color: var(--color-problem); border: 1px solid var(--color-border); font-weight: bold; float: left; }
 
 .queueTitle    { font-size: 12pt; text-align: center; font-weight: bold; }
 TABLE.queue    { font-size: 9pt; padding: 0; }
-TH.queue       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777; color: #333333; }
+TH.queue       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); color: #333333; }
 .queueOdd      { font-size: 9pt; background-color: var(--color-medium-grey); padding: 0 4 0 4; }
 .queueEven     { font-size: 9pt; background-color: var(--color-charcoal-gray); padding: 0 4 0 4; }
-.queueENABLED  { font-size: 9pt; background-color: var(--color-ok); border: 1px solid #777777; padding: 0 4 0 4; }
-.queueDISABLED { font-size: 9pt; background-color: var(--color-problem); border: 1px solid #777777; padding: 0 4 0 4; }
+.queueENABLED  { font-size: 9pt; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 0 4 0 4; }
+.queueDISABLED { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 4 0 4; }

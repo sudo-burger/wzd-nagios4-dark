@@ -17,7 +17,6 @@ div#map-container {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: var(--color-cardboard-gray);
 }
 
 /* Class to remove shadow from bootstrap buttons */

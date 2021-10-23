@@ -7,7 +7,7 @@
 
 .cmd { }
 
-.cmdType            { font-size: 12pt; font-weight: bold; color: var(--color-danger-red); padding-bottom: 40; }
+.cmdType            { font-size: 12pt; font-weight: bold; color: var(--color-danger); padding-bottom: 40; }
 .commandDescription { font-size:  9pt; background-color: --var(--color-background-darker); border: 1px solid var(--color-border-grey); margin: 4 0 0 0; padding: 4 4 4 4; }
 .descriptionTitle   { font-size: 11pt; font-weight: bold; }
 .infoMessage        { 

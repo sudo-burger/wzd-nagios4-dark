@@ -39,30 +39,52 @@ not important:  blue             aaccff  777777
 */
 
 :root {
-  --color-paper-white: rgba(252, 252, 252, 1);
-  --color-cardboard-gray: rgba(239, 240, 241, 1);
+
+  color-scheme: dark;
+
+  --color-cardboard-gray: rgba(240, 240, 240, 1);
+  --color-abyss-blue: rgba(41, 128, 185, .5);
+  --color-plasma-blue: rgba(61, 174, 233, .8);
+  --color-sunset-yellow: #b2b600;
+
+  --color-elevation-0: rgba(0,0,0,1);
+  --color-elevation-1: rgba(50, 50, 50, 0.75);
+  --color-elevation-2: rgba(50, 50, 50, 1);
+  --color-data-odd: rgba(50, 50, 50, 0.80);
+  --color-data-even: rgba(250, 50, 50, 0.80);
+  --color-primary:   var(--color-plasma-blue);
+  --color-secondary: var(--color-sunset-yellow);
+  --color-main-text: var(--color-cardboard-gray);
+
+  --color-problem: rgba(100, 0, 0, 1);
+  --color-ok: rgba(0, 80, 0, 1);
+  --color-pending: var(--color-plasma-blue);
+  --color-unknown: rgba(110, 110, 0, 1);
+  --color-warning: rgba(110, 110, 0, 1);
+  --color-unimportant: var(--color-abyss-blue);
+
+  --color-alternate-gray: rgba(100,100,100,1);
+  --color-border: var(--color-alternate-gray);
+  /*
   --color-charcoal-gray: rgba(49, 54, 59, 1);
+  --color-paper-white: rgba(252, 252, 252, 1);
   --color-shade-black: rgba(35, 38, 41, 1);
   --color-border-grey: rgba(103, 107, 110, 1);
-  --color-medium-grey: #555;
-  --color-abyss-blue: rgba(41, 128, 185, 1);
-  --color-dark-blue: #1d14ff;
+  --color-medium-grey: var(--color-c1);
+  --color-dark-blue: rgba(19, 19, 70, .5);
   --color-coastal-fog: rgba(127, 140, 141, 1);
-  --color-alternate-gray: rgba(189, 195, 199, 1);
-  --color-hover-blue: rgba(61, 174, 233, 0.4);
-  --color-plasma-blue: rgba(61, 174, 233, 1);
+  --color-hover-blue: rgba(61, 174, 233, 1);
   --color-icon-red: rgba(218, 68, 83, 1);
-  --color-danger-red: rgba(237, 21, 21, 1);
-  --color-dark-red: #810000;
-  --color-beware-orange: rgba(246, 116, 0, 1);
+  --color-danger-red: rgba(178, 34, 34, .5);
+  --color-dark-red: rgba(139, 0, 0, 1);
+  --color-beware-orange: #e77034;
   --color-icon-yellow: rgba(253, 188, 75, 1);
   --color-sunbeam-yellow: rgba(201, 206, 59, 1);
-  --color-sunset-yellow: #b2b600;
   --color-verdant-green: rgba(17, 209, 22, 1);
-  --color-dark-green: #006a00;
+  --color-dark-green: rgba(46, 139, 87, .5);
 
-  --color-main-background: var(--color-charcoal-gray);
-  --color-background-dark: var(--color-main-background);
+  --color-main-background: var(--color-c1);
+  --color-background-dark: var(--color-c2);
   --color-background-darker: var(--color-shade-black);
   --color-main-text: var(--color-cardboard-gray);
   --color-alt-text: var(--color-shade-black);
@@ -71,14 +93,13 @@ not important:  blue             aaccff  777777
   --color-primary-light: var(--color-primary);
   --color-primary-text: var(--color-paper-white);
 
-  --color-ok: var(--color-dark-green);
+  --color-ok: var(--color-c1);
   --color-pending: var(--color-plasma-blue);
-  --color-unknown: var(--color-beware-orange);
-  --color-warning: var(--color-sunset-yellow);
-  --color-problem: var(--color-danger-red);
+  --color-unknown: #e77034;
+  --color-warning: #e77034;
   --color-unimportant: var(--color-abyss-blue);
   --color-custom: var(--color-abyss-blue);
-
+  */
 }
 
 /* Scrollbar Style */
@@ -86,22 +107,25 @@ not important:  blue             aaccff  777777
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-main-background);
+  background: var(--color-elevation-0);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-primary);
 }
 
-
-
 body {
   margin: 0em;
   margin: 0.8em 0.8em 2em 0.8em;
   color: var(--color-main-text);
-  background-color: var(--color-main-background);
+  background-color: var(--color-elevation-0);
   font-family: arial, verdana, serif;
   font-weight: normal;
   font-size: 10pt;
+}
+
+/* Decrease brightness and contrast of images. */
+body img {
+  filter: brightness(.8) contrast(1.2);
 }
 
 table {
@@ -119,7 +143,6 @@ form {
   padding: 0;
 }
 
-
 a img {
   border: none;
 }
@@ -129,27 +152,24 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: var(--color-text-light);
 }
 a:active {
-  color: var(--color-text-light);
 }
 a:visited {
-  color: var(--color-main-text);
 }
-
 
 div.navbarlogo {
   margin: 0 0 10px 0;
 }
 div.navsection {
   margin: 5px 0 10px 0;
+  background-color: var(--color-elevation-1);
 }
 div.navsectiontitle {
   font-size: 9pt;
   font-weight: bold;
-  background-color: var(--color-background-darker);
   padding: 4px;
+  background-color: var(--color-elevation-2);
 }
 
 div.navsectionlinks {
@@ -301,13 +321,10 @@ div.navsectionheader ul li ul li {
   margin: 15px 0 0 0;
 }
 
-
-
-
 table.infoBox { width: 100%; }
 td.infoBox { font-size: 8pt; padding: 0 0 1em 0; white-space: nowrap; }
 div.infoBoxTitle { font-size: 10pt; font-weight: bold; }
-div.infoBoxBadProcStatus { font-size: 8pt; font-weight: bold; color: var(--color-danger-red); }
+div.infoBoxBadProcStatus { font-size: 8pt; font-weight: bold; color: var(--color-danger); }
 
 .linkBox { font-size: 8pt; padding: 1px; }
 table.linkBox td { white-space: nowrap; }
@@ -318,22 +335,37 @@ table.linkBox td { white-space: nowrap; }
 .filterValue { font-size: 8pt; }
 
 .errorDescription { font-size: 10pt; text-align: center; font-weight: bold; }
-.errorMessage     { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger-red); }
-.warningMessage   { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger-red); }
+.errorMessage     { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger); }
+.warningMessage   { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger); }
 
 .statusTitle { text-align: center; font-weight: bold; font-size: 12pt; white-space: nowrap; }
 .statusSort  { font-size: 8pt; }
 
+table.status {
+  background-color: var(--color-elevation-1);
+}
+th.status {
+  background-color: var(--color-elevation-2);
+}
+
+.headertable td {
+  background-color: var(--color-elevation-1);
+}
+
+.pagetitle {
+  /* background-color: var(--color-elevation-1); */
+}
+
 table.data    { padding: 0; }
 th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777;  }
-.dataOdd      { font-size: 8pt; background-color: var(--color-medium-grey); padding: 0px 4px 0px 4px; }
-.dataEven     { font-size: 8pt; background-color: var(--color-charcoal-gray); padding: 0px 4px 0px 4px; }
+.dataOdd      { font-size: 8pt; background-color: var(--color-data-odd); padding: 0px 4px 0px 4px; }
+.dataEven     { font-size: 8pt; background-color: var(--color-data-even); padding: 0px 4px 0px 4px; }
 .dataTitle    { font-size: 12pt; text-align: center; font-weight: bold; }
 .dataSubTitle { font-size: 10pt; text-align: center; font-weight: bold; }
 
 .optBox             { font-size:  9pt; white-space: nowrap; padding: 2px 0px 0px 0px; }
 .optBoxTitle        { font-size: 10pt; font-weight: bold; text-align: center; }
-.optBoxRequiredItem { font-size:  9pt; text-align: right; padding: 0px 5px 0px 5px; color: var(--color-plasma-blue); }
+.optBoxRequiredItem { font-size:  9pt; text-align: right; padding: 0px 5px 0px 5px; color: var(--color-primary); }
 .optBoxItem         { font-size:  9pt; text-align: right; padding: 0px 5px 0px 5px; }
 .optBoxValue        { font-size:  9pt; }
 
@@ -364,16 +396,16 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 .dateSelectSubTitle { font-size:  9pt; text-align: right; }
 .dateSelectItem     { font-size:  9pt; }
 
-.popupText { font-size: 8pt; background-color: #eeeeaa; border: 1px solid #777777; padding: 10px 10px 10px 10px; }
+.popupText { font-size: 8pt; background-color: #eeeeaa; border: 1px solid #777777; padding: 10px 10px 10px 10px; border: 1px solid var(--color-border);}
 
-.hostImportantProblem      { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; }
-.hostUnimportantProblem    { font-size: 9pt; background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; }
+.hostImportantProblem      { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
+.hostUnimportantProblem    { font-size: 9pt; background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
 
-.serviceImportantProblem   { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; }
-.serviceUnimportantProblem { font-size: 9pt; color: var(--color-charcoal-gray); background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; }
+.serviceImportantProblem   { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
+.serviceUnimportantProblem { font-size: 9pt; color: var(--color-elevation-1); background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
 
-.outageImportantProblem    { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; }
-.outageUnimportantProblem  { font-size: 9pt; background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; }
+.outageImportantProblem    { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
+.outageUnimportantProblem  { font-size: 9pt; background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
 
 
 /* Some nagios configurations have side.html rather than side.php and define */
@@ -410,7 +442,8 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 .splashbox {
   padding: 5px;
   margin: 5px;
-  border: 1px solid var(--color-alternate-gray);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-elevation-1);
   float: left;
   text-align: left;
   height: 140px;
@@ -432,7 +465,7 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 }
 .splashbox3-empty {
   margin: 5px;
-  border: 1px solid var(--color-alternate-gray);
+  border: 1px solid var(--color-border);
   width: 238px;
   height: 150px;
 }

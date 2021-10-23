@@ -14,66 +14,66 @@ table.tac table td a {  }
 .title     { font-weight: bold; }
 .titleItem { font-size: 8pt; font-weight: bold; }
 
-td.perfTitle { font-size: 10pt; font-weight: bold; background-color: var(--color-background-darker); padding: 4px; }
-.perfBox     { background-color: var(--color-background-dark); padding: 2px;}
+td.perfTitle { font-size: 10pt; font-weight: bold; background-color: var(--color-elevation-2); padding: 4px; }
+.perfBox     { background-color: var(--color-elevation-1); padding: 2px;}
 .perfItem    { font-size: 8pt; font-weight: bold; }
 .perfValue   { font-size: 8pt; }
 
-.healthTitle { font-weight: bold; font-size: 10pt; background-color: var(--color-background-darker); padding: 4px; }
+.healthTitle { font-weight: bold; font-size: 10pt; background-color: var(--color-elevation-2); padding: 4px; }
 .healthBox   { }
 .healthItem  { font-size: 10pt; font-weight: bold; }
 .healthBar   { background-color: grey; padding: 2 4 2 4; }
 
-.outageTitle     { font-weight: bold; background-color: var(--color-background-darker); padding: 4px; }
-.outageHeader    { font-weight: bold; border-bottom: 1px solid var(--color-alternate-gray); }
+.outageTitle     { font-weight: bold; background-color: var(--color-elevation-2); padding: 4px; }
+.outageHeader    { font-weight: bold; border-bottom: 1px solid var(--color-border); }
 
-.hostTitle       { font-weight: bold; background-color: var(--color-background-darker); padding: 4px; }
-td.hostHeader    { font-weight: bold; border-bottom: 1px solid var(--color-alternate-gray); }
+.hostTitle       { font-weight: bold; background-color: var(--color-elevation-2); padding: 4px; }
+td.hostHeader    { font-weight: bold; border-bottom: 1px solid var(--color-border); }
 
-.serviceTitle    { font-weight: bold; background-color: var(--color-background-darker); padding: 4px; }
-td.serviceHeader { font-weight: bold; border-bottom: 1px solid var(--color-alternate-gray); }
+.serviceTitle    { font-weight: bold; background-color: var(--color-elevation-2); padding: 4px; }
+td.serviceHeader { font-weight: bold; border-bottom: 1px solid var(--color-border); }
 
-.featureTitle    { font-weight: bold; background-color: var(--color-background-darker); padding: 4px; }
-td.featureHeader { font-weight: bold; border-bottom: 1px solid var(--color-alternate-gray); }
+.featureTitle    { font-weight: bold; background-color: var(--color-elevation-2); padding: 4px; }
+td.featureHeader { font-weight: bold; border-bottom: 1px solid var(--color-border); }
 
 .featureEnabled  { text-align: center; background-color: #ccffcc; }
 .featureDisabled { text-align: center; background-color: #ffcccc; }
 
 .featureEnabledFlapDetection             { text-align: center; font-weight: bold; }
 .featureDisabledFlapDetection            { text-align: center; font-weight: bold; }
-.featureItemEnabledServiceFlapDetection  { font-size: 8pt; background-color: var(--color-ok); }
-.featureItemDisabledServiceFlapDetection { font-size: 8pt; background-color: var(--color-problem); }
-.featureItemEnabledHostFlapDetection     { font-size: 8pt; background-color: var(--color-ok); }
-.featureItemDisabledHostFlapDetection    { font-size: 8pt; background-color: var(--color-problem); }
-.featureItemServicesNotFlapping          { font-size: 8pt; background-color: var(--color-ok); }
-.featureItemServicesFlapping             { font-size: 8pt; background-color: var(--color-problem); }
-.featureItemHostsNotFlapping             { font-size: 8pt; background-color: var(--color-ok); }
-.featureItemHostsFlapping                { font-size: 8pt; background-color: var(--color-problem); }
+.featureItemEnabledServiceFlapDetection  { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledServiceFlapDetection { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemEnabledHostFlapDetection     { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledHostFlapDetection    { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemServicesNotFlapping          { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemServicesFlapping             { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemHostsNotFlapping             { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemHostsFlapping                { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
 
 .featureEnabledNotifications             { text-align: center; font-weight: bold; }
 .featureDisabledNotifications            { text-align: center; font-weight: bold; }
-.featureItemEnabledServiceNotifications  { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledServiceNotifications { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
-.featureItemEnabledHostNotifications     { font-size: 8pt; background-color: var(--color-ok) border: 1px solid #777777; }
-.featureItemDisabledHostNotifications    { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
+.featureItemEnabledServiceNotifications  { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledServiceNotifications { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemEnabledHostNotifications     { font-size: 8pt; background-color: var(--color-ok) border: 1px solid var(--color-border); }
+.featureItemDisabledHostNotifications    { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
 
 .featureEnabledHandlers                  { text-align: center; font-weight: bold; }
 .featureDisabledHandlers                 { text-align: center; font-weight: bold; }
-.featureItemEnabledServiceHandlers       { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledServiceHandlers      { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
-.featureItemEnabledHostHandlers          { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
+.featureItemEnabledServiceHandlers       { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledServiceHandlers      { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemEnabledHostHandlers          { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
 .featureItemDisabledHostHandlers         { font-size: 8pt; background-color: var(--color-problem); }
 
 .featureEnabledActiveChecks              { text-align: center; font-weight: bold; }
 .featureDisabledActiveChecks             { text-align: center; font-weight: bold; }
-.featureItemEnabledActiveServiceChecks   { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledActiveServiceChecks  { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
-.featureItemEnabledActiveHostChecks      { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledActiveHostChecks     { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
+.featureItemEnabledActiveServiceChecks   { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledActiveServiceChecks  { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemEnabledActiveHostChecks      { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledActiveHostChecks     { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
 
 .featureEnabledPassiveChecks             { text-align: center; font-weight: bold; }
 .featureDisabledPassiveChecks            { text-align: center; font-weight: bold; }
-.featureItemEnabledPassiveServiceChecks  { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledPassiveServiceChecks { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
-.featureItemEnabledPassiveHostChecks     { font-size: 8pt; background-color: var(--color-ok); border: 1px solid #777777; }
-.featureItemDisabledPassiveHostChecks    { font-size: 8pt; background-color: var(--color-problem); border: 1px solid #777777; }
+.featureItemEnabledPassiveServiceChecks  { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledPassiveServiceChecks { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
+.featureItemEnabledPassiveHostChecks     { font-size: 8pt; background-color: var(--color-ok); border: 1px solid var(--color-border); }
+.featureItemDisabledPassiveHostChecks    { font-size: 8pt; background-color: var(--color-problem); border: 1px solid var(--color-border); }
