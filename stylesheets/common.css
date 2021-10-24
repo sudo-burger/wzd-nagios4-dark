@@ -50,13 +50,14 @@ not important:  blue             aaccff  777777
   --color-elevation-0: rgba(0,0,0,1);
   --color-elevation-1: rgba(50, 50, 50, 0.75);
   --color-elevation-2: rgba(50, 50, 50, 1);
-  --color-data-odd: rgba(50, 50, 50, 0.80);
-  --color-data-even: rgba(250, 50, 50, 0.80);
+  --color-data-odd: var(--color-elevation-1);
+  --color-data-even: var(--color-elevation-2);
   --color-primary:   var(--color-plasma-blue);
   --color-secondary: var(--color-sunset-yellow);
   --color-main-text: var(--color-cardboard-gray);
 
   --color-problem: rgba(100, 0, 0, 1);
+  --color-danger: var(--color-problem);
   --color-ok: rgba(0, 80, 0, 1);
   --color-pending: var(--color-plasma-blue);
   --color-unknown: rgba(110, 110, 0, 1);
@@ -131,6 +132,10 @@ body img {
 table {
   border: none;
   margin: 0;
+}
+
+table.status tbody {
+  background-color: var(--color-elevation-1);
 }
 
 th, td {
@@ -341,13 +346,6 @@ table.linkBox td { white-space: nowrap; }
 .statusTitle { text-align: center; font-weight: bold; font-size: 12pt; white-space: nowrap; }
 .statusSort  { font-size: 8pt; }
 
-table.status {
-  background-color: var(--color-elevation-1);
-}
-th.status {
-  background-color: var(--color-elevation-2);
-}
-
 .headertable td {
   background-color: var(--color-elevation-1);
 }
@@ -357,7 +355,7 @@ th.status {
 }
 
 table.data    { padding: 0; }
-th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777;  }
+th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border);  }
 .dataOdd      { font-size: 8pt; background-color: var(--color-data-odd); padding: 0px 4px 0px 4px; }
 .dataEven     { font-size: 8pt; background-color: var(--color-data-even); padding: 0px 4px 0px 4px; }
 .dataTitle    { font-size: 12pt; text-align: center; font-weight: bold; }
@@ -396,7 +394,7 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 .dateSelectSubTitle { font-size:  9pt; text-align: right; }
 .dateSelectItem     { font-size:  9pt; }
 
-.popupText { font-size: 8pt; background-color: #eeeeaa; border: 1px solid #777777; padding: 10px 10px 10px 10px; border: 1px solid var(--color-border);}
+.popupText { font-size: 8pt; background-color: #eeeeaa; padding: 10px 10px 10px 10px; border: 1px solid var(--color-border);}
 
 .hostImportantProblem      { font-size: 9pt; background-color: var(--color-problem); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}
 .hostUnimportantProblem    { font-size: 9pt; background-color: var(--color-unimportant); padding: 0px 5px 0px 5px; border: 1px solid var(--color-border);}

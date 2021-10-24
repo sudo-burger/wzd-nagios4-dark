@@ -8,7 +8,7 @@
 .status { }
 
 TABLE.status { font-size: 9pt; padding: 2; }
-TH.status    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid #777777; color: #333333; }
+TH.status    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); color: #333333; }
 DIV.status   { font-size: 10pt; text-align: center; }
 .statusOdd   { font-size: 9pt; background-color: #e7e7e7; }
 .statusEven  { font-size: 9pt; background-color: #f4f2f2; }
@@ -34,13 +34,13 @@ DIV.status   { font-size: 10pt; text-align: center; }
 DIV.serviceTotals      { font-size: 10pt; text-align: center; font-weight: bold; }
 TABLE.serviceTotals    { font-size: 10pt; font-weight: bold; }
 TH.serviceTotals,A.serviceTotals { font-size: 9pt; }
-TD.serviceTotals       { font-size: 9pt; text-align: center; background-color: #e0e0e0; border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsOK       { font-size: 9pt; text-align: center; background-color: var(--color-ok); border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsWARNING  { font-size: 9pt; text-align: center; background-color: var(--color-warning); border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsUNKNOWN  { font-size: 9pt; text-align: center; background-color: var(--color-unknown); border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsCRITICAL { font-size: 9pt; text-align: center; background-color: var(--color-problem); border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsPENDING  { font-size: 9pt; text-align: center; background-color: var(--color-pending); border: 1px solid #777777; padding: 2 4 2 4; }
-.serviceTotalsPROBLEMS { font-size: 9pt; text-align: center; background-color: var(--color-unimportant); border: 1px solid #777777; padding: 2 4 2 4; }
+TD.serviceTotals       { font-size: 9pt; text-align: center; background-color: #e0e0e0; border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsOK       { font-size: 9pt; text-align: center; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsWARNING  { font-size: 9pt; text-align: center; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsUNKNOWN  { font-size: 9pt; text-align: center; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsCRITICAL { font-size: 9pt; text-align: center; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsPENDING  { font-size: 9pt; text-align: center; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 2 4 2 4; }
+.serviceTotalsPROBLEMS { font-size: 9pt; text-align: center; background-color: var(--color-unimportant); border: 1px solid var(--color-border); padding: 2 4 2 4; }
 
 
 DIV.hostTotals         { font-size: 10pt; text-align: center; font-weight: bold; }
