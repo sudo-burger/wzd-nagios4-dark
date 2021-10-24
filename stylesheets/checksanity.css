@@ -21,7 +21,3 @@
 .Value        { font-size: 10pt; background-color: #f4f2f2; font-weight: bold; }
 .ValueOk      { font-size: 10pt; background-color: var(--color-ok); font-weight: bold; }
 .ValueError   { font-size: 10pt; background-color: var(--color-problem); font-weight: bold; }
-
-
-
-

@@ -134,10 +134,9 @@ table {
   margin: 0;
 }
 
-table.status tbody {
+table.status {
   background-color: var(--color-elevation-1);
 }
-
 th, td {
   border: none;
   padding: 0 2px 0 2px;

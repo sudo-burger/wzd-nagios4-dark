@@ -7,21 +7,21 @@
 
 .status { }
 .itemTotalsTitle { font-size: 8pt; font-style: italic; clear:both;}
-table.status { font-size: 9pt; padding: 0 0 10 0; }
+table.status { font-size: 9pt; padding: 0 0 0 0; }
 table.statuss td, table.statuss td a {  color: var(--color-alt-text) }
 th.status    { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border); color: var(--color-main-text); }
 div.status   { font-size: 10pt; text-align: center; }
-.statusOdd   { font-size: 9pt; background-color: var(--color-medium-grey); line-height: 150%; padding: 0 4 0 4; }
-.statusEven  { font-size: 9pt; background-color: var(--charcoal-gray); line-height: 150%; padding: 0 4 0 4; }
+.statusOdd   { font-size: 9pt; background-color: var(--color-data-odd);  line-height: 150%; padding: 0 4 0 4; }
+.statusEven  { font-size: 9pt; background-color: var(--color-data-even); line-height: 150%; padding: 0 4 0 4; }
 .statusOdd, .statusOdd a, .statusEven, .statusEven a { color: var(--color-main-text); }
 
-.statusPENDING  { font-size: 9pt; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusOK       { font-size: 9pt; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusRECOVERY { font-size: 9pt; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusUNKNOWN  { font-size: 9pt; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusWARNING  { font-size: 9pt; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusCRITICAL { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
-.statusCRITICALACK { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusPENDING              { font-size: 9pt; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusOK                   { font-size: 9pt; background-color: var(--color-ok);      border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusRECOVERY             { font-size: 9pt; background-color: var(--color-ok);      border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusUNKNOWN              { font-size: 9pt; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusWARNING              { font-size: 9pt; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusCRITICAL             { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusCRITICALACK          { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
 
 .statusHOSTPENDING          { font-size: 9pt; background-color: var(--color-pending); line-height: 150%; padding: 0 4 0 4; }
 .statusHOSTUP               { font-size: 9pt; background-color: var(--color-ok); line-height: 150%; padding: 0 4 0 4; }
@@ -31,21 +31,21 @@ div.status   { font-size: 10pt; text-align: center; }
 .statusHOSTUNREACHABLEACK   { font-size: 9pt; background-color: var(--color-unknown); line-height: 150%; padding: 0 4 0 4; }
 .statusHOSTUNREACHABLESCHED { font-size: 9pt; background-color: var(--color-unknown); line-height: 150%; padding: 0 4 0 4; }
 
-.statusBGUNKNOWN          { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGUNKNOWNACK       { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGUNKNOWNSCHED     { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGWARNING          { font-size: 9pt; background-color: var(--color-warning); }
-.statusBGWARNINGACK       { font-size: 9pt; background-color: var(--color-warning); }
-.statusBGWARNINGSCHED     { font-size: 9pt; background-color: var(--color-warning); }
-.statusBGCRITICAL         { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGCRITICALACK      { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGCRITICALSCHED    { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGDOWN             { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGDOWNACK          { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGDOWNSCHED        { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGUNREACHABLE      { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGUNREACHABLEACK   { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGUNREACHABLESCHED { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNKNOWN            { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNKNOWNACK         { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNKNOWNSCHED       { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGWARNING            { font-size: 9pt; background-color: var(--color-warning); }
+.statusBGWARNINGACK         { font-size: 9pt; background-color: var(--color-warning); }
+.statusBGWARNINGSCHED       { font-size: 9pt; background-color: var(--color-warning); }
+.statusBGCRITICAL           { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGCRITICALACK        { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGCRITICALSCHED      { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWN               { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWNACK            { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWNSCHED          { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGUNREACHABLE        { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLEACK     { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLESCHED   { font-size: 9pt; background-color: var(--color-unknown); }
 
 div.serviceTotals      { font-size: 10pt; text-align: center; font-weight: bold; }
 table.serviceTotals    { font-size: 10pt; font-weight: bold; }
