@@ -6,6 +6,7 @@
 /* copyright notice and this permission notice appear in all copies.       */
 
 @import 'servicetotals.css';
+@import 'statusclasses.css';
 
 .status { }
 
@@ -15,28 +16,29 @@ DIV.status   { font-size: 10pt; text-align: center; }
 .statusOdd   { font-size: 9pt; }
 .statusEven  { font-size: 9pt; }
 
-.statusPENDING  { font-size: 9pt; background-color: var(--color-pending); }
+/*
+.statusBGCRITICAL      { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWN          { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGUNKNOWN       { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLE   { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGWARNING       { font-size: 9pt; background-color: var(--color-warning); }
+.statusCRITICAL { font-size: 9pt; background-color: var(--color-problem); }
+.statusHOSTDOWN        { font-size: 9pt; background-color: var(--color-problem); }
+.statusHOSTPENDING     { font-size: 9pt; background-color: var(--color-pending); }
+.statusHOSTUNREACHABLE { font-size: 9pt; background-color: var(--color-unknown); }
+.statusHOSTUP          { font-size: 9pt; background-color: var(--color-ok); }
 .statusOK       { font-size: 9pt; background-color: var(--color-ok); }
+.statusPENDING  { font-size: 9pt; background-color: var(--color-pending); }
 .statusRECOVERY { font-size: 9pt; background-color: var(--color-ok); }
 .statusUNKNOWN  { font-size: 9pt; background-color: var(--color-unknown); }
 .statusWARNING  { font-size: 9pt; background-color: var(--color-warning); }
-.statusCRITICAL { font-size: 9pt; background-color: var(--color-problem); }
-
-.statusHOSTPENDING     { font-size: 9pt; background-color: var(--color-pending); }
-.statusHOSTUP          { font-size: 9pt; background-color: var(--color-ok); }
-.statusHOSTDOWN        { font-size: 9pt; background-color: var(--color-problem); }
-.statusHOSTUNREACHABLE { font-size: 9pt; background-color: var(--color-unknown); }
-
-.statusBGUNKNOWN       { font-size: 9pt; background-color: var(--color-unknown); }
-.statusBGWARNING       { font-size: 9pt; background-color: var(--color-warning); }
-.statusBGCRITICAL      { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGDOWN          { font-size: 9pt; background-color: var(--color-problem); }
-.statusBGUNREACHABLE   { font-size: 9pt; background-color: var(--color-unknown); }
+*/
 
 DIV.hostTotals         { font-size: 10pt; text-align: center; font-weight: bold; }
 TABLE.hostTotals       { font-size: 10pt; font-weight: bold; }
 TH.hostTotals,A.hostTotals { font-size: 9pt; }
 TD.hostTotals          { font-size: 9pt; text-align: center; background-color: #e4e4e4; }
+
 .hostTotalsUP          { font-size: 9pt; text-align: center; background-color: var(--color-ok); }
 .hostTotalsDOWN        { font-size: 9pt; text-align: center; background-color: var(--color-problem); }
 .hostTotalsUNREACHABLE { font-size: 9pt; text-align: center; background-color: var(--color-unknown); }

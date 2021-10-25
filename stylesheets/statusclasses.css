@@ -1,0 +1,29 @@
+.statusBGCRITICAL           { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGCRITICALACK        { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGCRITICALSCHED      { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWN               { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWNACK            { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGDOWNSCHED          { font-size: 9pt; background-color: var(--color-problem); }
+.statusBGUNKNOWN            { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNKNOWNACK         { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNKNOWNSCHED       { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLE        { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLEACK     { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGUNREACHABLESCHED   { font-size: 9pt; background-color: var(--color-unknown); }
+.statusBGWARNING            { font-size: 9pt; background-color: var(--color-warning); }
+.statusBGWARNINGACK         { font-size: 9pt; background-color: var(--color-warning); }
+.statusBGWARNINGSCHED       { font-size: 9pt; background-color: var(--color-warning); }
+.statusCRITICAL             { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusCRITICALACK          { font-size: 9pt; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusHOSTDOWN             { font-size: 9pt; background-color: var(--color-problem); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTDOWNACK          { font-size: 9pt; background-color: var(--color-problem); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTPENDING          { font-size: 9pt; background-color: var(--color-pending); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTUNREACHABLE      { font-size: 9pt; background-color: var(--color-unknown); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTUNREACHABLEACK   { font-size: 9pt; background-color: var(--color-unknown); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTUNREACHABLESCHED { font-size: 9pt; background-color: var(--color-unknown); line-height: 150%; padding: 0 4 0 4; }
+.statusHOSTUP               { font-size: 9pt; background-color: var(--color-ok); line-height: 150%; padding: 0 4 0 4; }
+.statusOK                   { font-size: 9pt; background-color: var(--color-ok);      border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusPENDING              { font-size: 9pt; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusRECOVERY             { font-size: 9pt; background-color: var(--color-ok);      border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusUNKNOWN              { font-size: 9pt; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 0 5 0 5; }
+.statusWARNING              { font-size: 9pt; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 0 5 0 5; }
