@@ -8,3 +8,4 @@ A fairly heavily modified remix of Russ Cook's nagios4-dark-theme (https://gitla
 ![Screenshot](img/screenshot-3.png)
 ![Screenshot](img/screenshot-4.png)
 ![Screenshot](img/screenshot-5.png)
+![Screenshot](img/screenshot-6.png)
