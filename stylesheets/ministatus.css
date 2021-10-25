@@ -5,6 +5,8 @@
 /* purpose with or without fee is hereby granted, provided that the above  */
 /* copyright notice and this permission notice appear in all copies.       */
 
+@import "servicetotals.css"
+
 .status { }
 
 TABLE.status { font-size: 9pt; padding: 2; }
@@ -30,18 +32,6 @@ DIV.status   { font-size: 10pt; text-align: center; }
 .statusBGCRITICAL      { font-size: 9pt; background-color: var(--color-problem); }
 .statusBGDOWN          { font-size: 9pt; background-color: var(--color-problem); }
 .statusBGUNREACHABLE   { font-size: 9pt; background-color: var(--color-unknown); }
-
-DIV.serviceTotals      { font-size: 10pt; text-align: center; font-weight: bold; }
-TABLE.serviceTotals    { font-size: 10pt; font-weight: bold; }
-TH.serviceTotals,A.serviceTotals { font-size: 9pt; }
-TD.serviceTotals       { font-size: 9pt; text-align: center; background-color: #e0e0e0; border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsOK       { font-size: 9pt; text-align: center; background-color: var(--color-ok); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsWARNING  { font-size: 9pt; text-align: center; background-color: var(--color-warning); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsUNKNOWN  { font-size: 9pt; text-align: center; background-color: var(--color-unknown); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsCRITICAL { font-size: 9pt; text-align: center; background-color: var(--color-problem); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsPENDING  { font-size: 9pt; text-align: center; background-color: var(--color-pending); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-.serviceTotalsPROBLEMS { font-size: 9pt; text-align: center; background-color: var(--color-unimportant); border: 1px solid var(--color-border); padding: 2 4 2 4; }
-
 
 DIV.hostTotals         { font-size: 10pt; text-align: center; font-weight: bold; }
 TABLE.hostTotals       { font-size: 10pt; font-weight: bold; }
