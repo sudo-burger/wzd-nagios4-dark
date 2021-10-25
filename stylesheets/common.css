@@ -50,18 +50,18 @@ not important:  blue             aaccff  777777
   --color-elevation-0: rgba(0,0,0,1);
   --color-elevation-1: rgba(50, 50, 50, 0.75);
   --color-elevation-2: rgba(50, 50, 50, 1);
-  --color-data-odd: var(--color-elevation-1);
-  --color-data-even: var(--color-elevation-2);
-  --color-primary:   var(--color-plasma-blue);
-  --color-secondary: var(--color-sunset-yellow);
-  --color-main-text: var(--color-cardboard-gray);
+  --color-data-odd:    var(--color-elevation-1);
+  --color-data-even:   var(--color-elevation-2);
+  --color-primary:     var(--color-plasma-blue);
+  --color-secondary:   var(--color-sunset-yellow);
+  --color-main-text:   var(--color-cardboard-gray);
 
-  --color-problem: rgba(100, 0, 0, 1);
-  --color-danger: var(--color-problem);
-  --color-ok: rgba(0, 80, 0, 1);
-  --color-pending: var(--color-plasma-blue);
-  --color-unknown: rgba(110, 110, 0, 1);
-  --color-warning: rgba(110, 110, 0, 1);
+  --color-problem:     rgba(100, 0, 0, 1);
+  --color-danger:      var(--color-problem);
+  --color-ok:          rgba(0, 80, 0, 1);
+  --color-pending:     var(--color-plasma-blue);
+  --color-unknown:     rgba(110, 110, 0, 1);
+  --color-warning:     rgba(110, 110, 0, 1);
   --color-unimportant: var(--color-abyss-blue);
 
   --color-alternate-gray: rgba(100,100,100,1);
@@ -137,6 +137,7 @@ table {
 table.status {
   background-color: var(--color-elevation-1);
 }
+
 th, td {
   border: none;
   padding: 0 2px 0 2px;
@@ -342,22 +343,44 @@ table.linkBox td { white-space: nowrap; }
 .errorMessage     { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger); }
 .warningMessage   { font-size: 10pt; text-align: center; font-weight: bold; color: var(--color-danger); }
 
-.statusTitle { text-align: center; font-weight: bold; font-size: 12pt; white-space: nowrap; }
 .statusSort  { font-size: 8pt; }
-
-.headertable td {
+/*
+.headertable > tbody > tr > td {
   background-color: var(--color-elevation-1);
 }
-
-.pagetitle {
-  /* background-color: var(--color-elevation-1); */
+*/
+/* Workaround for unused last cell. */
+/*
+.headertable > tbody > tr > td:last-child {
+  background-color: var(--color-elevation-0);
 }
+*/
+.pagetitle {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14pt;
+}
+.statustitle {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14pt;
+}
+.dataTitle {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14pt;
+}
+.navBoxTitle {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 12pt;
+}
+/*.statusTitle { text-align: center; font-weight: bold; font-size: 12pt; white-space: nowrap; } */
 
 table.data    { padding: 0; }
 th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-bottom: 1px solid var(--color-border);  }
 .dataOdd      { font-size: 8pt; background-color: var(--color-data-odd); padding: 0px 4px 0px 4px; }
 .dataEven     { font-size: 8pt; background-color: var(--color-data-even); padding: 0px 4px 0px 4px; }
-.dataTitle    { font-size: 12pt; text-align: center; font-weight: bold; }
 .dataSubTitle { font-size: 10pt; text-align: center; font-weight: bold; }
 
 .optBox             { font-size:  9pt; white-space: nowrap; padding: 2px 0px 0px 0px; }
@@ -369,7 +392,6 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 .optionBoxTitle { font-size: 10pt; text-align: center; font-weight: bold; }
 .optionBox      { font-size: 10pt; padding: 2px; }
 
-.navBoxTitle { font-size: 10pt; font-weight: bold; white-space: nowrap; }
 .navBoxItem  { font-size: 8pt; }
 .navBoxDate  { font-size: 8pt; white-space: nowrap; }
 .navBoxFile  { font-size: 8pt; text-align: center; }
